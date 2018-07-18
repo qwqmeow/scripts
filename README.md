@@ -2,8 +2,13 @@
 
 ## install jdk8 on centos7
 ```
-curl -s https://github.com/qwqmeow/scripts/centos_install_jdk8.sh | bash
+curl -s https://github.com/qwqmeow/scripts/raw/master/centos_install_jdk8.sh | bash
 ```
+## run jenkins war
+```
+curl -s https://github.com/qwqmeow/scripts/raw/master/run_jenkins.sh | bash
+```
+
 
 ## other
 

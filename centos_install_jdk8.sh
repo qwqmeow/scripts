@@ -1,8 +1,8 @@
 #!/bin/bash
-#Maintainer : qwqmeoww <i@meoww.app>
+# Maintainer : qwqmeow i@meoww.app
 
 jdk8_url='http://www.oracle.com/technetwork/java/javase/downloads/index.html'
-endpoint=$(curl $jdk8_download_url | grep JDK8 | awk -F "\"" '{ print $4}')
+endpoint=$(curl -s $jdk8_url | grep JDK8 | awk -F "\"" '{ print $4}')
 jdk8_download_url='http://www.oracle.com'$endpoint
 
 # Color
@@ -32,7 +32,6 @@ check_system(){
         release="centos"
     fi
 
-    if 
 }
 
 # Disable selinux
@@ -55,10 +54,11 @@ pre_install(){
 
 install_java(){
     if [ $release = 'centos' ]; then
-        local package_url=$(curl "${jdk8_download_url}" |grep 'x64.rpm' |awk -F "\"" '{print $12}')
-        echo -e "[${green}Info${plain}] download package now..."
-        wget --no-check-certificate --no-cookies      --header "Cookie: oraclelicense=accept-securebackup-cookie" "${jdk8_download_url}"
+        local package_url=$(curl -s "${jdk8_download_url}" |grep 'x64.rpm' |awk -F "\"" '{print $12}')
+        echo -e "[${green}Info${plain}] package match,download now..."
+        wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" "${package_url}"
         sudo rpm -ivh jdk-8u*.rpm
+    fi
 }
 
 # Install java
