@@ -1,5 +1,10 @@
 # scripts
 
+## install lastest version of geth on centos/debian
+```
+curl -s https://github.com/qwqmeow/scripts/raw/master/geth.sh | bash
+```
+
 ## install jdk8 on centos7
 ```
 curl -s https://github.com/qwqmeow/scripts/raw/master/centos_install_jdk8.sh | bash
@@ -24,4 +29,6 @@ curl -s https://get.docker.com/ | sh
 ### nvm
 ```
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+source ~/.bashrc
+nvm install node
 ```
