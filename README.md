@@ -1,5 +1,11 @@
 # scripts
 
+## get pps of a network interface
+```
+wget  https://github.com/qwqmeow/scripts/raw/master/netpps.sh
+sh netpps.sh eth0
+```
+
 ## install lastest version of geth on centos/debian
 ```
 curl -s https://github.com/qwqmeow/scripts/raw/master/geth.sh | bash
