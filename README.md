@@ -2,22 +2,22 @@
 
 ## get pps of a network interface
 ```
-wget  https://github.com/qwqmeow/scripts/raw/master/netpps.sh
+wget  https://raw.githubusercontent.com/qwqmeow/scripts/raw/master/netpps.sh
 sh netpps.sh eth0
 ```
 
 ## install lastest version of geth on centos/debian
 ```
-curl -s https://github.com/qwqmeow/scripts/raw/master/geth.sh | bash
+curl -s https://raw.githubusercontent.com/qwqmeow/scripts/raw/master/geth.sh | bash
 ```
 
 ## install jdk8 on centos7
 ```
-curl -s https://github.com/qwqmeow/scripts/raw/master/centos_install_jdk8.sh | bash
+curl -s https://raw.githubusercontent.com/qwqmeow/scripts/master/centos_install_jdk8.sh | bash
 ```
 ## run jenkins war
 ```
-curl -s https://github.com/qwqmeow/scripts/raw/master/run_jenkins.sh | bash
+curl -s https://raw.githubusercontent.com/qwqmeow/scripts/raw/master/run_jenkins.sh | bash
 ```
 
 
